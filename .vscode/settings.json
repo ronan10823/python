@@ -1,7 +1,11 @@
 {
   "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
   "python.terminal.activateEnvironment": true,
-  "python.analysis.extraPaths": [
-    "${workspaceFolder}"
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.newTerminalAndKillPrevious",
+      "sequence": ["workbench.action.terminal.kill", "workbench.action.terminal.new", "workbench.action.terminal.focus"]
+    }
   ]
 }
