@@ -3,7 +3,9 @@
     "allow": [
       "Bash(claude:*)",
       "Bash(echo:*)",
-      "WebSearch"
+      "WebSearch",
+      "mcp__playwright__browser_navigate",
+      "Bash(python --version 2>&1 && python -c \"import sys; print\\(sys.executable\\)\" 2>&1)"
     ]
   }
 }
